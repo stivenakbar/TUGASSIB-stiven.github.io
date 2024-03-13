@@ -1,0 +1,42 @@
+/* CSS untuk styling halaman */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    color: blue;
+}
+
+form {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: grey;
+}
+
+/* CSS untuk carousel */
+.slide {
+    display: none;
+}

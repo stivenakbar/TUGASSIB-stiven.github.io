@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="#" method="post"><br>
+        <strong><label for="nama">Nama:</label></strong><br>
+        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"><br><br>
+
+        <strong><label for="email">Email:</label></strong><br>
+        <input type="text" id="email" name="email" placeholder="Email aktif"><br><br>
+
+        <strong><label for="no_hp">No. HP:</label></strong><br>
+        <input type="text" id="no_hp" name="no_hp" placeholder="No HP aktif"><br><br>
+
+        <strong><label for="jenis_kelamin">Jenis Kelamin:</label></strong><br>
+        <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki-laki">
+        <label for="laki_laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <strong><label for="prodi">Prodi:</label></strong><br>
+        <select id="prodi" name="prodi">
+            <option value="Pilih">Pilih</option>
+            <option value="Manajemen">Manajemen</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Akuntansi">Akuntansi</option>
+        </select><br>
+
+        <strong><label for="hobi">Hobi:</label></strong><br>
+        <input type="checkbox" id="membaca" name="hobi" value="membaca">
+        <label for="membaca">Membaca</label><br>
+        <input type="checkbox" id="menulis" name="hobi" value="menulis">
+        <label for="menulis">Menulis</label><br>
+        <input type="checkbox" id="menyanyi" name="hobi" value="menyanyi">
+        <label for="menyanyi">Menyanyi</label><br>
+        <input type="checkbox" id="menulis" name="hobi" value="olahraga">
+        <label for="olahraga">Olahraga</label><br><br>
+
+
+        <strong><label for="alamat">Alamat:</label></strong><br>
+        <textarea id="alamat" name="alamat" placeholder="Alamat lengkap"></textarea><br><br>
+
+        <strong><label for="foto">Foto Diri:</label></strong><br>
+        <input type="file" id="foto" name="foto"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
