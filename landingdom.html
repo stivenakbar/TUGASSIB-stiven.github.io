@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Link CSS untuk carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- CSS khusus untuk landing page -->
+    <style>
+        /* Style untuk landing page */
+        .carousel-container {
+            width: 95%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .carousel-img {
+            width: 850px;
+            height: 530px;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-container">
+        <h1>Selamat Datang!</h1>
+        <ul>
+            <li>
+                <a href="landingdom.html">Home</a>
+                <a href="form.html">Form</a>
+            </li>
+        </ul>
+        <div class="carousel">
+            <img class="carousel-img" src="1.jpg" alt="Slide 1">
+            <img class="carousel-img" src="2.jpg" alt="Slide 2">
+            <img class="carousel-img" src="3.jpg" alt="Slide 3">
+        </div>
+        <p>Ini adalah halaman landing interaktif menggunakan carousel.</p>
+        <!-- Link ke form.html -->
+        <a href="form.html">Klik di sini untuk melanjutkan ke form</a>
+    </div>
+
+    <!-- Script untuk carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick();
+        });
+        
+    </script>
+
+    <script>
+        var slideIndex = 0;
+showSlide(slideIndex);
+
+function nextSlide() {
+    showSlide(slideIndex += 1);
+}
+
+function prevSlide() {
+    showSlide(slideIndex -= 1);
+}
+
+function showSlide(n) {
+    var slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) {slideIndex = 0}
+    if (n < 0) {slideIndex = slides.length - 1}
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+    </script>
+</body>
+</html>
