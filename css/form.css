@@ -5,13 +5,11 @@
 body {
     font-family: Verdana, sans-serif;
     margin: 0;
-    background-color: #2E765E;
+    background-color: rgb(157, 186, 211);
 }
 
-
-
 .container {
-    background-color: #2E765E;
+    background-color: rgb(157, 186, 211);
     padding: 100px 0 0 0;
 }
 
